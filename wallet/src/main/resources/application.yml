@@ -1,0 +1,28 @@
+# 端口号
+server:
+  port: 8086
+## 数据库相关配置
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/wgj
+    username: root
+    password: 880113
+## 日志
+#logging:
+#  level:
+#    root: INFO
+#    org.hibernate: INFO
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+#    com.springms: DEBUG
+wallet:
+  address: http://192.168.21.67:10202
+  name: mtpreal
+  password: appeon
